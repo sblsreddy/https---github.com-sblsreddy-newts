@@ -33,3 +33,16 @@ function adds ( a:number, b:number) : number {
 function joins ( x:string, y:string) : string {
     return x + y ;
 }
+
+
+// Creating objects  & it's interference to check all properties
+
+const post : { title: string, daysOld: number, published: boolean} = {
+    title : 'this is news paper',
+    daysOld : 10,
+    published : true
+};
+
+const postPrint = (postToPrint: {title: string, daysOld: number, published: boolean}) => {
+    return `${postToPrint.title} (${postToPrint.daysOld} daysOld)`;
+};
